@@ -21,6 +21,7 @@
 9. Define route as like below.
 
     $routes->get('/stripe', 'StripeController::index');
+    
     $routes->post('/stripe/create-charge', 'StripeController::createCharge');
   
 10. run the below command for ci4.
