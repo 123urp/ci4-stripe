@@ -94,11 +94,7 @@ define('EVENT_PRIORITY_NORMAL', 100);
 define('EVENT_PRIORITY_HIGH', 10);
 
 //...
-//up account...
-//defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_XXXXX");
-//defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_XXXXX");
 
-//dhp account...
 defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_XXXXX");
 defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_XXXXX");
 
