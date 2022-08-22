@@ -1,56 +1,28 @@
-# CodeIgniter 4 Framework
+# Stripe with CodeIgniter 4 Framework
 
-## What is CodeIgniter?
+1. Start with create account at stripe.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](http://codeigniter.com).
+2. Now, for codeigniter 4 install it via composer or get with github code. Below, link has installation process mentioned or you can get whole code directly from github, code link also mentioned in link. Link is here: https://codeigniter.com/user_guide/installation/index.html
 
-This repository holds the distributable version of the framework,
-including the user guide. It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+3. Once setup of code, run spark command for run ci4 project. you will get welcome page.
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+4. Now, please refer route pages from app/config folder and get sigin and signup controllers and required view with that from above code.
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/).
+5. For create stripe controller, install the stripe package with below command.
+    - composer require stripe/stripe-php
 
+6. now, get Publishable key and Secret key from your stripe account and Define them in constant page.
 
-## Important Change with index.php
+7. Run below command and create stripe controller with add the code from above code:
+   - php spark make:controller StripeController
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+8. Get view page file and create stripe page's component elements.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
-
-**Please** read the user guide for a better explanation of how CI4 works!
-
-## Repository Management
-
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
-
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
-
-## Contributing
-
-We welcome contributions from the community.
-
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
-
-## Server Requirements
-
-PHP version 7.4 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
+9. Define route as like below.
+  $routes->get('/stripe', 'StripeController::index');
+  $routes->post('/stripe/create-charge', 'StripeController::createCharge');
+  
+10. run the below command for ci4.
+    - php spark serve
+    
+From above steps, you can get stripe payment with registration, login, logout and stripe-payment. 
