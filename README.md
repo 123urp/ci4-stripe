@@ -19,8 +19,9 @@
 8. Get view page file and create stripe page's component elements.
 
 9. Define route as like below.
-  $routes->get('/stripe', 'StripeController::index');
-  $routes->post('/stripe/create-charge', 'StripeController::createCharge');
+
+    $routes->get('/stripe', 'StripeController::index');
+    $routes->post('/stripe/create-charge', 'StripeController::createCharge');
   
 10. run the below command for ci4.
     - php spark serve
