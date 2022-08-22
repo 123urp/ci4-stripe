@@ -95,11 +95,11 @@ define('EVENT_PRIORITY_HIGH', 10);
 
 //...
 //up account...
-//defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_51LNbLHSD7FQyjgADGOInKwCJz1Ef3EXCBRw3EDiXyROzIUjDRZUvfLyyt1jzIeAEYgM6mC63Y1pyW5SDjETXWIBo00MiLgFpMw");
-//defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_51LNbLHSD7FQyjgADYc0cOIlkfxcOAZHcXsUGVHJkdnOUGxSwRWYWXnmRkO155xF8budUuWwll0JNCX3hQohuzHjb00EGHiaWZj");
+//defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_XXXXX");
+//defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_XXXXX");
 
 //dhp account...
-defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_51LUqdxIDAE3FTHDD9ZXFbgHdiFhApNXx9ExwAxlRwH5sZLMTLBTWAgoYbJkQkPjKwxUn7IhU0nPM64ylydLMB6PA00H4zy1P0O");
-defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_51LUqdxIDAE3FTHDDn2D3JovYEqCKUYsQEQO0bY4XZti4euYvIJI121zb4kKfKvrP5VV3nQ89QOb9Jo15aReWwOp4007NNPFC7W");
+defined("STRIPE_KEY") || define('STRIPE_KEY', "pk_test_XXXXX");
+defined("STRIPE_SECRET") || define('STRIPE_SECRET', "sk_test_XXXXX");
 
 //...
